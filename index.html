@@ -1685,23 +1685,73 @@ function updateFileName(input){
 }
 
 // Careers form
-function submitCareer(){
+async function submitCareer(){
   const name=document.getElementById('c-name').value.trim();
   const phone=document.getElementById('c-phone').value.trim();
+  const email=document.getElementById('c-email').value.trim();
+  const exp=document.getElementById('c-exp').value;
+  const msg=document.getElementById('c-msg').value.trim();
   if(!name||!phone){alert('Please fill in your name and phone number.');return;}
-  document.getElementById('careerSuccess').style.display='block';
-  document.querySelector('#careerForm .form-submit').style.display='none';
-  document.getElementById('careerSuccess').scrollIntoView({behavior:'smooth',block:'center'});
+  const btn=document.querySelector('#careerForm .form-submit');
+  btn.textContent='Submitting...';btn.disabled=true;
+  try{
+    const res=await fetch('https://formspree.io/f/mpqbzgqo',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({
+        'Name':name,
+        'Phone':phone,
+        'Email':email,
+        'Experience':exp,
+        'Message':msg
+      })
+    });
+    if(res.ok){
+      document.getElementById('careerSuccess').style.display='block';
+      btn.style.display='none';
+      document.getElementById('careerSuccess').scrollIntoView({behavior:'smooth',block:'center'});
+    } else {
+      btn.textContent='Submit Application';btn.disabled=false;
+      alert('Something went wrong. Please try again.');
+    }
+  } catch(e){
+    btn.textContent='Submit Application';btn.disabled=false;
+    alert('Network error. Please try again.');
+  }
 }
 
 // Enquiry form
-function submitEnquiry(){
+async function submitEnquiry(){
   const name=document.getElementById('fname').value.trim();
   const phone=document.getElementById('phone').value.trim();
+  const email=document.getElementById('femail').value.trim();
+  const msg=document.getElementById('fmsg').value.trim();
   if(!name||!phone){alert('Please fill in your name and phone number.');return;}
-  document.getElementById('enquirySuccess').style.display='block';
-  document.querySelector('#enquiry .form-submit').style.display='none';
-  document.getElementById('enquirySuccess').scrollIntoView({behavior:'smooth',block:'center'});
+  const btn=document.querySelector('#enquiry .form-submit');
+  btn.textContent='Sending...';btn.disabled=true;
+  try{
+    const res=await fetch('https://formspree.io/f/mkoynlok',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({
+        'Name':name,
+        'Phone':phone,
+        'Email':email,
+        'Message':msg
+      })
+    });
+    if(res.ok){
+      document.getElementById('enquirySuccess').style.display='block';
+      btn.style.display='none';
+      document.getElementById('enquirySuccess').scrollIntoView({behavior:'smooth',block:'center'});
+    } else {
+      btn.textContent='Send Enquiry';btn.disabled=false;
+      alert('Something went wrong. Please try again or call us directly.');
+    }
+  } catch(e){
+    btn.textContent='Send Enquiry';btn.disabled=false;
+    alert('Network error. Please try again or call us directly.');
+  }
 }
 
 // Smooth ticker duplicate
