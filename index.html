@@ -180,14 +180,16 @@ nav {
 }
 .btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 32px rgba(200,160,53,0.45);}
 .btn-ghost{
-  border:1px solid rgba(255,255,255,0.3);color:var(--white);
+  border:2px solid var(--white);color:var(--ink);
   padding:14px 32px;border-radius:3px;
   font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.92rem;
   letter-spacing:0.14em;text-transform:uppercase;
   text-decoration:none;display:inline-block;
   transition:all 0.25s;
+  background:var(--white);
+  box-shadow:0 4px 16px rgba(0,0,0,0.3);
 }
-.btn-ghost:hover{border-color:var(--gold);color:var(--gold);}
+.btn-ghost:hover{background:var(--gold);border-color:var(--gold);color:var(--ink);transform:translateY(-2px);}
 
 /* Hero Right */
 .hero-right{
@@ -211,16 +213,19 @@ nav {
   padding:10px 0;white-space:nowrap;
 }
 .ticker-inner{
-  display:inline-block;
+  display:inline-flex;align-items:center;
   animation:ticker 30s linear infinite;
+  -webkit-animation:ticker 30s linear infinite;
+  will-change:transform;
 }
 .ticker-inner span{
-  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.85rem;
-  color:var(--ink);letter-spacing:0.2em;text-transform:uppercase;
-  padding:0 40px;
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.9rem;
+  color:var(--ink);letter-spacing:0.15em;text-transform:uppercase;
+  padding:0 32px;display:inline-block;
 }
 .ticker-inner span::before{content:'◆  ';opacity:0.6;}
 @keyframes ticker{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+@-webkit-keyframes ticker{from{-webkit-transform:translateX(0);}to{-webkit-transform:translateX(-50%);}}
 
 /* ===================== STATS ===================== */
 .stats{background:var(--navy);padding:50px 5%;}
@@ -252,12 +257,12 @@ nav {
 }
 .section-tag-line{width:32px;height:2px;background:var(--gold);}
 .section-tag-text{
-  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.72rem;
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.85rem;
   color:var(--gold);letter-spacing:0.3em;text-transform:uppercase;
 }
 .section-title{
   font-family:'Bebas Neue',sans-serif;
-  font-size:clamp(3.2rem,6vw,5.8rem);
+  font-size:clamp(3.6rem,6.5vw,6.5rem);
   color:var(--ink);line-height:1.0;
   letter-spacing:0.03em;margin-bottom:20px;
 }
@@ -315,7 +320,7 @@ nav {
 }
 .about-bullet svg{color:var(--gold);}
 .about-list-text h5{
-  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1rem;
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.2rem;
   color:var(--ink);letter-spacing:0.05em;margin-bottom:2px;
 }
 .about-list-text p{font-size:0.88rem;color:var(--muted);line-height:1.6;}
@@ -340,7 +345,7 @@ nav {
   color:var(--gold);letter-spacing:0.3em;text-transform:uppercase;margin-bottom:12px;
 }
 .vm-card h4{
-  font-family:'Bebas Neue',sans-serif;font-size:1.8rem;
+  font-family:'Bebas Neue',sans-serif;font-size:2.4rem;
   color:var(--white);letter-spacing:0.05em;margin-bottom:14px;
 }
 .vm-card p{font-size:0.9rem;line-height:1.7;color:rgba(255,255,255,0.55);}
@@ -429,8 +434,8 @@ nav {
 }
 .product-top-tag{
   position:absolute;top:20px;left:20px;
-  background:var(--gold);padding:5px 14px;border-radius:2px;
-  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.65rem;
+  background:var(--white);padding:8px 18px;border-radius:2px;
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.95rem;
   color:var(--ink);letter-spacing:0.18em;text-transform:uppercase;
   z-index:3;
   box-shadow:0 2px 12px rgba(0,0,0,0.4);
@@ -482,7 +487,7 @@ nav {
   position:relative;z-index:1;
 }
 .step-title{
-  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.85rem;
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1rem;
   color:var(--white);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;
 }
 .step-desc{font-size:0.78rem;color:rgba(255,255,255,0.4);line-height:1.5;}
@@ -507,7 +512,7 @@ nav {
   color:var(--gold);opacity:0.4;line-height:1;flex-shrink:0;width:40px;
 }
 .strength-content h4{
-  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.05rem;
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.25rem;
   color:var(--ink);letter-spacing:0.06em;margin-bottom:4px;
 }
 .strength-content p{font-size:0.88rem;color:var(--muted);line-height:1.6;}
@@ -518,7 +523,7 @@ nav {
   background:var(--ink);padding:40px;border-radius:2px;margin-bottom:24px;
 }
 .quality-cert h4{
-  font-family:'Bebas Neue',sans-serif;font-size:1.6rem;
+  font-family:'Bebas Neue',sans-serif;font-size:2.2rem;
   color:var(--white);letter-spacing:0.06em;margin-bottom:20px;
 }
 .cert-list{display:flex;flex-direction:column;gap:12px;}
@@ -550,7 +555,7 @@ nav {
   font-size:2.4rem;margin-bottom:18px;display:block;
 }
 .industry-name{
-  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.05rem;
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.25rem;
   color:var(--white);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;
 }
 .industry-desc{font-size:0.83rem;color:rgba(255,255,255,0.4);line-height:1.6;}
@@ -570,7 +575,7 @@ nav {
 }
 .perk-icon{font-size:1.4rem;flex-shrink:0;margin-top:2px;}
 .perk-text h5{
-  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.92rem;
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.1rem;
   color:var(--ink);letter-spacing:0.06em;margin-bottom:3px;
 }
 .perk-text p{font-size:0.82rem;color:var(--muted);}
@@ -580,7 +585,7 @@ nav {
   background:var(--ink);padding:40px;border-radius:2px;
 }
 .form-title{
-  font-family:'Bebas Neue',sans-serif;font-size:1.8rem;
+  font-family:'Bebas Neue',sans-serif;font-size:2.4rem;
   color:var(--white);letter-spacing:0.06em;margin-bottom:28px;
   padding-bottom:16px;border-bottom:1px solid rgba(200,160,53,0.2);
 }
@@ -643,7 +648,7 @@ nav {
   border-left:3px solid var(--gold);
 }
 .contact-block-icon{
-  width:44px;height:44px;background:var(--ink);border-radius:2px;
+  width:44px;height:44px;background:#e8edf2;border-radius:2px;
   display:flex;align-items:center;justify-content:center;flex-shrink:0;
   font-size:1.2rem;
 }
@@ -678,8 +683,8 @@ nav {
 }
 .form-success-msg{
   display:none;text-align:center;padding:24px;
-  background:rgba(200,160,53,0.1);border:1px solid var(--gold);
-  border-radius:2px;color:var(--ink);margin-top:16px;
+  background:rgba(200,160,53,0.12);border:1px solid var(--gold);
+  border-radius:2px;color:var(--white);margin-top:16px;
 }
 .form-success-msg h4{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.1rem;color:var(--gold);margin-bottom:6px;}
 
@@ -896,7 +901,7 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:48px 5% 24px;}
 }
 .maps-btn:hover{background:rgba(200,160,53,0.06);transform:translateX(4px);}
 .maps-btn-icon{
-  width:44px;height:44px;background:var(--ink);border-radius:2px;
+  width:44px;height:44px;background:#e8edf2;border-radius:2px;
   display:flex;align-items:center;justify-content:center;flex-shrink:0;
 }
 .maps-btn-label{
@@ -1083,9 +1088,9 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:48px 5% 24px;}
             <div style="display:flex;gap:18px;align-items:flex-start;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,0.07);">
               <div style="flex-shrink:0;width:44px;height:44px;display:flex;align-items:center;justify-content:center;">
                 <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="38" height="38">
-                  <ellipse cx="22" cy="24" rx="18" ry="7" stroke="#c8a035" stroke-width="2"/>
-                  <ellipse cx="22" cy="20" rx="18" ry="7" stroke="#c8a035" stroke-width="2"/>
-                  <ellipse cx="22" cy="16" rx="18" ry="7" stroke="#c8a035" stroke-width="2"/>
+                  <ellipse cx="22" cy="24" rx="18" ry="7" stroke="#2a3a4a" stroke-width="2"/>
+                  <ellipse cx="22" cy="20" rx="18" ry="7" stroke="#2a3a4a" stroke-width="2"/>
+                  <ellipse cx="22" cy="16" rx="18" ry="7" stroke="#2a3a4a" stroke-width="2"/>
                 </svg>
               </div>
               <div>
@@ -1097,9 +1102,9 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:48px 5% 24px;}
             <div style="display:flex;gap:18px;align-items:flex-start;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,0.07);">
               <div style="flex-shrink:0;width:44px;height:44px;display:flex;align-items:center;justify-content:center;">
                 <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="38" height="38">
-                  <circle cx="22" cy="22" r="16" stroke="#c8a035" stroke-width="2"/>
-                  <path d="M6 22h32M22 6c-3.5 4.5-6 10-6 16s2.5 11.5 6 16M22 6c3.5 4.5 6 10 6 16s-2.5 11.5-6 16" stroke="#c8a035" stroke-width="1.6"/>
-                  <path d="M9 15h26M9 29h26" stroke="#c8a035" stroke-width="1.6"/>
+                  <circle cx="22" cy="22" r="16" stroke="#2a3a4a" stroke-width="2"/>
+                  <path d="M6 22h32M22 6c-3.5 4.5-6 10-6 16s2.5 11.5 6 16M22 6c3.5 4.5 6 10 6 16s-2.5 11.5-6 16" stroke="#2a3a4a" stroke-width="1.6"/>
+                  <path d="M9 15h26M9 29h26" stroke="#2a3a4a" stroke-width="1.6"/>
                 </svg>
               </div>
               <div>
@@ -1111,26 +1116,26 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:48px 5% 24px;}
             <div style="display:flex;gap:18px;align-items:flex-start;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,0.07);">
               <div style="flex-shrink:0;width:44px;height:44px;display:flex;align-items:center;justify-content:center;">
                 <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="38" height="38">
-                  <rect x="7" y="5" width="24" height="30" rx="2" stroke="#c8a035" stroke-width="2"/>
-                  <path d="M13 15h12M13 20h9" stroke="#c8a035" stroke-width="1.8" stroke-linecap="round"/>
-                  <circle cx="32" cy="34" r="7" stroke="#c8a035" stroke-width="2"/>
-                  <polyline points="29 34 31.5 36.5 36 31.5" stroke="#c8a035" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="7" y="5" width="24" height="30" rx="2" stroke="#2a3a4a" stroke-width="2"/>
+                  <path d="M13 15h12M13 20h9" stroke="#2a3a4a" stroke-width="1.8" stroke-linecap="round"/>
+                  <circle cx="32" cy="34" r="7" stroke="#2a3a4a" stroke-width="2"/>
+                  <polyline points="29 34 31.5 36.5 36 31.5" stroke="#2a3a4a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </div>
               <div>
                 <div style="font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1rem;color:var(--white);margin-bottom:3px;">100% Quality Certified Lots</div>
-                <div style="font-size:0.83rem;color:rgba(255,255,255,0.45);line-height:1.6;">Test certificate issued with every dispatch</div>
+                <div style="font-size:0.83rem;color:rgba(255,255,255,0.45);line-height:1.6;">In-house lab with world-class testing equipment — test certificate with every dispatch</div>
               </div>
             </div>
 
             <div style="display:flex;gap:18px;align-items:flex-start;">
               <div style="flex-shrink:0;width:44px;height:44px;display:flex;align-items:center;justify-content:center;">
                 <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="38" height="38">
-                  <path d="M4 13h24v20H4z" stroke="#c8a035" stroke-width="2" stroke-linejoin="round"/>
-                  <path d="M28 18h7l5 7v8H28V18z" stroke="#c8a035" stroke-width="2" stroke-linejoin="round"/>
-                  <circle cx="10" cy="35" r="3.5" stroke="#c8a035" stroke-width="1.8"/>
-                  <circle cx="34" cy="35" r="3.5" stroke="#c8a035" stroke-width="1.8"/>
-                  <path d="M13 24h7" stroke="#c8a035" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M4 13h24v20H4z" stroke="#2a3a4a" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M28 18h7l5 7v8H28V18z" stroke="#2a3a4a" stroke-width="2" stroke-linejoin="round"/>
+                  <circle cx="10" cy="35" r="3.5" stroke="#2a3a4a" stroke-width="1.8"/>
+                  <circle cx="34" cy="35" r="3.5" stroke="#2a3a4a" stroke-width="1.8"/>
+                  <path d="M13 24h7" stroke="#2a3a4a" stroke-width="1.8" stroke-linecap="round"/>
                 </svg>
               </div>
               <div>
@@ -1155,20 +1160,20 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:48px 5% 24px;}
         <div class="about-list">
           <div class="about-list-item">
             <div class="about-bullet">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l4 4 6-6" stroke="#c8a035" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l4 4 6-6" stroke="#2a3a4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
             <div class="about-list-text">
               <h5>Advanced Manufacturing Facility</h5>
-              <p>Modern aluminium casting and continuous rolling setup ensuring dimensional precision and surface quality.</p>
+              <p>Modern aluminium casting and continuous rolling setup with world-class machinery — engineered for dimensional precision, consistent surface quality, and high output reliability.</p>
             </div>
           </div>
           <div class="about-list-item">
             <div class="about-bullet">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l4 4 6-6" stroke="#c8a035" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l4 4 6-6" stroke="#2a3a4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
             <div class="about-list-text">
-              <h5>Consistent Quality Control</h5>
-              <p>Rigorous in-process and final testing for conductivity, tensile strength and elongation on every batch.</p>
+              <h5>In-House Quality Lab with World-Class Equipment</h5>
+              <p>We operate a dedicated quality lab equipped with world-class testing machinery. Every lot undergoes rigorous mechanical and electrical testing — tensile strength, elongation and conductivity — before dispatch. A test certificate accompanies every single order.</p>
             </div>
           </div>
         </div>
@@ -1181,13 +1186,13 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:48px 5% 24px;}
         <div class="vm-card-icon">◎</div>
         <div class="vm-card-tag">Our Vision</div>
         <h4>To Lead with Quality</h4>
-        <p>To emerge as the most trusted aluminium wire rod manufacturer in India — known for consistent quality, timely supply, and long-term customer partnerships that power India's electrical infrastructure.</p>
+        <p>To emerge as the most trusted aluminium wire rod manufacturer in India — known for world-class quality backed by our in-house testing lab, timely supply, and long-term partnerships that power India's electrical infrastructure.</p>
       </div>
       <div class="vm-card">
         <div class="vm-card-icon">◉</div>
         <div class="vm-card-tag">Our Mission</div>
         <h4>Strong Wire Rod, Strong India</h4>
-        <p>To produce high-quality aluminium wire rods that meet the dynamic demands of the electrical, cable, and manufacturing industries — with precision, reliability, and commitment to every client at every stage.</p>
+        <p>To produce high-quality aluminium wire rods that meet the dynamic demands of the electrical, cable, and manufacturing industries — backed by world-class lab equipment, rigorous testing at every stage, and an unwavering commitment to every client.</p>
       </div>
     </div>
   </div>
@@ -1289,7 +1294,7 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:48px 5% 24px;}
       <div class="process-step fade-up">
         <div class="step-num">05</div>
         <div class="step-title">Quality Control</div>
-        <div class="step-desc">World-class lab equipment used for mechanical and electrical testing — tensile strength, elongation and conductivity verified on every lot</div>
+        <div class="step-desc">Dedicated in-house lab with world-class testing machinery — tensile strength, elongation and electrical conductivity verified on every single lot before approval</div>
       </div>
       <div class="process-step fade-up">
         <div class="step-num">06</div>
@@ -1390,6 +1395,10 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:48px 5% 24px;}
           <h4>Our Quality Commitment</h4>
           <p style="font-size:0.85rem;color:rgba(255,255,255,0.5);margin-bottom:16px;line-height:1.6;">We operate a dedicated in-house quality lab equipped with world-class testing machinery — every lot is tested before it leaves our plant, and a test certificate accompanies every dispatch.</p>
           <div class="cert-list">
+            <div class="cert-item">
+              <span class="cert-icon">✓</span>
+              <span class="cert-text">Dedicated in-house quality lab with world-class testing machinery</span>
+            </div>
             <div class="cert-item">
               <span class="cert-icon">✓</span>
               <span class="cert-text">In-process quality checks at every production stage</span>
@@ -1531,7 +1540,9 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:48px 5% 24px;}
 
         <div class="contact-blocks">
           <div class="contact-block">
-            <div class="contact-block-icon">📞</div>
+            <div class="contact-block-icon" style="background:#e8edf2;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2a3a4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
             <div>
               <div class="contact-block-label">Call / WhatsApp</div>
               <div class="contact-block-val">
@@ -1542,14 +1553,18 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:48px 5% 24px;}
             </div>
           </div>
           <div class="contact-block">
-            <div class="contact-block-icon">✉️</div>
+            <div class="contact-block-icon" style="background:#e8edf2;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2a3a4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
             <div>
               <div class="contact-block-label">Email</div>
               <div class="contact-block-val"><a href="mailto:gravitymetal2022@gmail.com">gravitymetal2022@gmail.com</a></div>
             </div>
           </div>
           <div class="contact-block">
-            <div class="contact-block-icon">📍</div>
+            <div class="contact-block-icon" style="background:#e8edf2;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2a3a4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
             <div>
               <div class="contact-block-label">Plant Address</div>
               <div class="contact-block-val">Village Saddu, Near Tarpongi Toll Plaza<br>Raipur, Chhattisgarh – 493221</div>
@@ -1787,9 +1802,16 @@ function searchGo(term){
 }
 document.addEventListener('keydown',e=>{if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();toggleSearch();}});
 
-// Smooth ticker duplicate
+// Ticker — pre-duplicate for reliable mobile rendering
 const ticker = document.getElementById('tickerContent');
-ticker.innerHTML += ticker.innerHTML;
+// Duplicate content so scroll loops seamlessly
+const original = ticker.innerHTML;
+ticker.innerHTML = original + original;
+// Force reflow to ensure animation starts correctly on mobile
+ticker.style.animation = 'none';
+ticker.offsetHeight; // trigger reflow
+ticker.style.animation = '';
+ticker.style.webkitAnimation = '';
 </script>
 </body>
 </html>
