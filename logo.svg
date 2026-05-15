@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="94" fill="none" stroke="#5cc5eb" stroke-width="3.5"/>
+  <!-- Inner ring -->
+  <circle cx="100" cy="100" r="82" fill="none" stroke="#5cc5eb" stroke-width="1.2" opacity="0.5"/>
+  <!-- Hexagon shape behind GM -->
+  <polygon points="100,44 140,67 140,113 100,136 60,113 60,67" fill="none" stroke="#5cc5eb" stroke-width="2.5"/>
+  <!-- Inner hexagon -->
+  <polygon points="100,54 132,72 132,108 100,126 68,108 68,72" fill="none" stroke="#5cc5eb" stroke-width="1.2" opacity="0.5"/>
+  <!-- GM Letters -->
+  <text x="100" y="96" 
+    text-anchor="middle" 
+    font-family="Arial Black, Arial, sans-serif" 
+    font-weight="900" 
+    font-size="38" 
+    fill="#5cc5eb" 
+    letter-spacing="-1">GM</text>
+  <!-- GRAVITY METAL top arc text -->
+  <path id="topArc" d="M 18,100 A 82,82 0 0,1 182,100" fill="none"/>
+  <text font-family="Arial, sans-serif" font-weight="700" font-size="13" fill="#5cc5eb" letter-spacing="4">
+    <textPath href="#topArc" startOffset="8%">GRAVITY METAL</textPath>
+  </text>
+  <!-- GRAVITY METAL bottom arc text -->
+  <path id="bottomArc" d="M 24,108 A 82,82 0 0,0 176,108" fill="none"/>
+  <text font-family="Arial, sans-serif" font-weight="700" font-size="13" fill="#5cc5eb" letter-spacing="4">
+    <textPath href="#bottomArc" startOffset="8%">GRAVITY METAL</textPath>
+  </text>
+</svg>

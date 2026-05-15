@@ -1,0 +1,1818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gravity Metal Private Limited – Aluminium Wire Rod Manufacturer, Raipur</title>
+<link rel="preload" href="hero.jpg" as="image">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #0a0e1a;
+  --navy: #0d1b35;
+  --gold: #c8a035;
+  --gold-light: #e8c460;
+  --silver: #8fa3b8;
+  --steel: #d0dce8;
+  --white: #ffffff;
+  --off: #f5f7fa;
+  --muted: #5a6b7d;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--white);overflow-x:hidden;}
+
+/* ===================== NAV ===================== */
+nav {
+  position:fixed;top:0;left:0;right:0;z-index:999;
+  background:rgba(10,14,26,0.97);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(200,160,53,0.25);
+  height:90px;display:flex;align-items:center;
+  padding:0 5%;justify-content:space-between;
+}
+.nav-logo{display:flex;align-items:center;gap:16px;text-decoration:none;}
+.nav-logo-img{
+  width:50px;height:50px;border-radius:50%;
+  object-fit:cover;border:2px solid var(--gold);
+  background:transparent;
+  /* SVG circle logo - no background */
+}
+.nav-brand-wrap{display:flex;flex-direction:column;line-height:1.1;}
+.nav-brand-name{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1.45rem;color:var(--white);letter-spacing:0.06em;
+}
+.nav-brand-sub{
+  font-family:'Rajdhani',sans-serif;
+  font-size:0.72rem;color:var(--gold);letter-spacing:0.25em;text-transform:uppercase;font-weight:600;
+}
+.nav-links{display:flex;gap:6px;list-style:none;align-items:center;}
+.nav-links a{
+  font-family:'Rajdhani',sans-serif;font-weight:600;font-size:0.92rem;
+  color:rgba(255,255,255,0.72);text-decoration:none;
+  letter-spacing:0.12em;text-transform:uppercase;
+  padding:10px 14px;border-radius:3px;
+  transition:all 0.25s;position:relative;
+}
+.nav-links a::after{
+  content:'';position:absolute;bottom:4px;left:14px;right:14px;height:1px;
+  background:var(--gold);transform:scaleX(0);transition:transform 0.25s;
+}
+.nav-links a:hover{color:var(--gold);}
+.nav-links a:hover::after{transform:scaleX(1);}
+.nav-cta{
+  background:var(--gold);color:var(--ink)!important;
+  padding:11px 26px!important;border-radius:3px;
+  font-weight:700!important;letter-spacing:0.12em!important;
+}
+.nav-cta::after{display:none!important;}
+.nav-cta:hover{background:var(--gold-light)!important;color:var(--ink)!important;}
+.hamburger{
+  display:none;flex-direction:column;gap:5px;cursor:pointer;
+  background:none;border:none;padding:4px;
+  transition:transform 0.4s cubic-bezier(0.23,1,0.32,1);
+}
+.hamburger span{
+  width:24px;height:2px;background:var(--white);display:block;
+  transition:transform 0.4s cubic-bezier(0.23,1,0.32,1),
+             opacity 0.3s ease,
+             background 0.3s ease;
+  transform-origin:center;
+}
+/* Open state — top bar rotates to X, mid fades, bottom rotates to X */
+.hamburger.open{transform:rotate(180deg);}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0);}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.hamburger.open span{background:var(--gold);}
+.mobile-menu{
+  display:none;position:fixed;top:90px;left:0;right:0;
+  background:rgba(10,14,26,0.98);z-index:998;padding:20px 5%;
+  transform:translateY(-10px);opacity:0;
+  transition:transform 0.35s cubic-bezier(0.23,1,0.32,1), opacity 0.3s ease;
+}
+.mobile-menu.open{
+  display:block;
+  animation:menuSlide 0.35s cubic-bezier(0.23,1,0.32,1) forwards;
+}
+@keyframes menuSlide{
+  from{transform:translateY(-12px);opacity:0;}
+  to{transform:translateY(0);opacity:1;}
+}
+.mobile-menu ul{list-style:none;}
+.mobile-menu ul li a{
+  display:block;padding:14px 0;color:var(--white);text-decoration:none;
+  font-family:'Rajdhani',sans-serif;font-weight:600;letter-spacing:0.12em;
+  text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);
+  transition:color 0.2s, padding-left 0.2s;
+}
+.mobile-menu ul li a:hover{color:var(--gold);padding-left:8px;}
+
+/* ===================== HERO ===================== */
+.hero{
+  padding-top:90px;min-height:100vh;
+  position:relative;overflow:hidden;
+  display:flex;align-items:center;
+}
+.hero-photo-bg{
+  position:absolute;inset:0;
+}
+.hero-photo-img{
+  width:100%;height:100%;object-fit:cover;
+  object-position:center 40%;
+  display:block;
+}
+.hero-photo-overlay{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(to right, rgba(5,10,20,0.72) 0%, rgba(5,10,20,0.35) 45%, rgba(5,10,20,0.0) 100%),
+    linear-gradient(to top, rgba(5,10,20,0.25) 0%, transparent 35%);
+}
+.hero-inner{
+  max-width:1280px;margin:0 auto;padding:0 5%;
+  display:flex;align-items:center;
+  position:relative;z-index:2;width:100%;
+  min-height:100vh;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  margin-bottom:22px;
+}
+.hero-eyebrow-line{display:none;}
+.hero-eyebrow-text{
+  font-family:'Rajdhani',sans-serif;font-size:0.75rem;font-weight:700;
+  color:var(--gold);letter-spacing:0.3em;text-transform:uppercase;
+}
+.hero-heading{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(3.8rem, 7vw, 7rem);
+  line-height:0.92;color:var(--white);
+  letter-spacing:0.04em;
+  margin-bottom:8px;
+  text-shadow:0 4px 20px rgba(0,0,0,0.5);
+}
+.hero-heading span{
+  color:var(--gold);
+  display:block;
+}
+.hero-sub-heading{
+  font-family:'Rajdhani',sans-serif;font-weight:700;
+  font-size:clamp(0.85rem,1.5vw,1.1rem);
+  color:var(--silver);letter-spacing:0.18em;text-transform:uppercase;
+  margin-bottom:28px;
+}
+.hero-tagline{
+  font-size:1.05rem;line-height:1.8;
+  color:rgba(255,255,255,0.72);
+  max-width:600px;margin-bottom:36px;
+  text-shadow:0 1px 4px rgba(0,0,0,0.4);
+}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap;}
+.btn-gold{
+  background:var(--gold);color:var(--ink);
+  padding:15px 36px;border-radius:3px;
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.92rem;
+  letter-spacing:0.14em;text-transform:uppercase;
+  text-decoration:none;display:inline-block;
+  transition:all 0.25s;
+  box-shadow:0 4px 24px rgba(200,160,53,0.35);
+}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 32px rgba(200,160,53,0.45);}
+.btn-ghost{
+  border:2px solid var(--white);color:var(--ink);
+  padding:14px 32px;border-radius:3px;
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.92rem;
+  letter-spacing:0.14em;text-transform:uppercase;
+  text-decoration:none;display:inline-block;
+  transition:all 0.25s;
+  background:var(--white);
+  box-shadow:0 4px 16px rgba(0,0,0,0.3);
+}
+.btn-ghost:hover{background:var(--gold);border-color:var(--gold);color:var(--ink);transform:translateY(-2px);}
+
+/* Hero Right */
+.hero-right{
+  display:flex;justify-content:flex-end;align-items:center;
+  position:relative;
+}
+.hero-corner-tag{
+  position:absolute;
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.65rem;
+  color:var(--gold);letter-spacing:0.2em;text-transform:uppercase;
+}
+.hero-corner-tag-tl{top:0;left:0;}
+.hero-corner-tag-br{bottom:0;right:0;}
+
+/* Scroll indicator */
+
+
+/* ===================== TICKER STRIP ===================== */
+.ticker{
+  background:var(--gold);overflow:hidden;
+  padding:10px 0;white-space:nowrap;
+}
+.ticker-inner{
+  display:inline-flex;align-items:center;
+  animation:ticker 30s linear infinite;
+  -webkit-animation:ticker 30s linear infinite;
+  will-change:transform;
+}
+.ticker-inner span{
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.9rem;
+  color:var(--ink);letter-spacing:0.15em;text-transform:uppercase;
+  padding:0 32px;display:inline-block;
+}
+.ticker-inner span::before{content:'◆  ';opacity:0.6;}
+@keyframes ticker{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+@-webkit-keyframes ticker{from{-webkit-transform:translateX(0);}to{-webkit-transform:translateX(-50%);}}
+
+/* ===================== STATS ===================== */
+.stats{background:var(--navy);padding:50px 5%;}
+.stats-inner{
+  max-width:1280px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+  background:rgba(200,160,53,0.15);
+  border:1px solid rgba(200,160,53,0.15);
+}
+.stat-item{
+  background:var(--navy);text-align:center;
+  padding:36px 20px;
+  position:relative;
+}
+.stat-num{
+  font-family:'Bebas Neue',sans-serif;font-size:3.2rem;
+  color:var(--gold);line-height:1;margin-bottom:8px;
+}
+.stat-label{
+  font-family:'Rajdhani',sans-serif;font-weight:600;font-size:0.72rem;
+  color:rgba(255,255,255,0.5);letter-spacing:0.2em;text-transform:uppercase;
+}
+
+/* ===================== SECTION BASE ===================== */
+.section{padding:100px 5%;}
+.section-inner{max-width:1280px;margin:0 auto;}
+.section-tag{
+  display:flex;align-items:center;gap:12px;margin-bottom:14px;
+}
+.section-tag-line{width:32px;height:2px;background:var(--gold);}
+.section-tag-text{
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.85rem;
+  color:var(--gold);letter-spacing:0.3em;text-transform:uppercase;
+}
+.section-title{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(3.6rem,6.5vw,6.5rem);
+  color:var(--ink);line-height:1.0;
+  letter-spacing:0.03em;margin-bottom:20px;
+}
+.section-title.light{color:var(--white);}
+.section-desc{
+  font-size:1rem;line-height:1.75;color:var(--muted);max-width:560px;
+}
+.section-head{margin-bottom:60px;}
+
+/* ===================== ABOUT ===================== */
+#about{background:var(--off);}
+.about-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;
+}
+.about-img-wrap{
+  position:relative;
+}
+.about-img-main{
+  width:100%;aspect-ratio:4/3;
+  object-fit:cover;
+  border-radius:2px;
+  /* Use actual aluminium wire rod image */
+}
+.about-img-placeholder{
+  width:100%;aspect-ratio:4/3;
+  background:linear-gradient(135deg, #1a2a3a 0%, #0d1b35 100%);
+  border-radius:2px;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;
+}
+.about-img-placeholder svg{opacity:0.15;}
+.about-accent-box{
+  position:absolute;bottom:-20px;right:-20px;
+  background:var(--gold);padding:24px 28px;
+  border-radius:2px;z-index:2;
+}
+.about-accent-num{
+  font-family:'Bebas Neue',sans-serif;font-size:2.6rem;
+  color:var(--ink);line-height:1;
+}
+.about-accent-txt{
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.72rem;
+  color:rgba(10,14,26,0.7);letter-spacing:0.18em;text-transform:uppercase;
+}
+.about-list{margin-top:28px;}
+.about-list-item{
+  display:flex;align-items:flex-start;gap:14px;
+  padding:16px 0;border-bottom:1px solid var(--steel);
+}
+.about-list-item:last-child{border-bottom:none;}
+.about-bullet{
+  width:28px;height:28px;flex-shrink:0;
+  background:var(--ink);border-radius:2px;
+  display:flex;align-items:center;justify-content:center;margin-top:1px;
+}
+.about-bullet svg{color:var(--gold);}
+.about-list-text h5{
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.2rem;
+  color:var(--ink);letter-spacing:0.05em;margin-bottom:2px;
+}
+.about-list-text p{font-size:0.88rem;color:var(--muted);line-height:1.6;}
+
+/* Vision Mission */
+.vm-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:60px;
+}
+.vm-card{
+  background:var(--ink);padding:40px;border-radius:2px;position:relative;overflow:hidden;
+}
+.vm-card::before{
+  content:'';position:absolute;top:0;left:0;width:3px;height:100%;
+  background:var(--gold);
+}
+.vm-card-icon{
+  font-family:'Bebas Neue',sans-serif;font-size:3rem;
+  color:rgba(200,160,53,0.12);position:absolute;top:20px;right:24px;
+}
+.vm-card-tag{
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.7rem;
+  color:var(--gold);letter-spacing:0.3em;text-transform:uppercase;margin-bottom:12px;
+}
+.vm-card h4{
+  font-family:'Bebas Neue',sans-serif;font-size:2.4rem;
+  color:var(--white);letter-spacing:0.05em;margin-bottom:14px;
+}
+.vm-card p{font-size:0.9rem;line-height:1.7;color:rgba(255,255,255,0.55);}
+
+/* ===================== PRODUCTS ===================== */
+#products{background:var(--white);}
+.products-intro{
+  display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:60px;
+}
+.products-grid{
+  display:grid;grid-template-columns:1fr;gap:16px;
+  background:transparent;
+}
+.product-card{
+  position:relative;overflow:hidden;
+  height:560px;
+  border-bottom:2px solid rgba(200,160,53,0.12);
+  cursor:default;
+}
+.product-card:hover .product-img-wrap img{transform:scale(1.04);}
+.product-img-wrap{
+  position:absolute;inset:0;
+  overflow:hidden;
+}
+.product-img-wrap img{
+  width:100%;height:100%;object-fit:cover;
+  object-position:center 40%;
+  transition:transform 0.7s ease;
+  display:block;
+}
+@media(max-width:640px){
+  .product-card{height:420px;}
+}
+/* Placeholder for when images load */
+.product-img-placeholder{
+  width:100%;height:100%;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;
+}
+.product-img-placeholder.ec-bg{
+  background:linear-gradient(135deg,#1a2a3a,#0d3060);
+}
+.product-img-placeholder.cg-bg{
+  background:linear-gradient(135deg,#1a3020,#0d4030);
+}
+.product-img-placeholder.fc-bg{
+  background:linear-gradient(135deg,#2a1a0d,#402010);
+}
+.product-overlay{
+  position:absolute;inset:0;z-index:1;
+  background:linear-gradient(
+    to top,
+    rgba(10,14,26,0.92) 0%,
+    rgba(10,14,26,0.5) 30%,
+    rgba(10,14,26,0.0) 55%,
+    transparent 100%
+  );
+}
+.product-content{
+  position:absolute;bottom:0;left:0;right:0;
+  padding:28px 36px 32px;
+  z-index:2;
+}
+@media(max-width:640px){
+  .product-content{padding:20px 20px 24px;}
+}
+.product-abbr{
+  font-family:'Bebas Neue',sans-serif;font-size:2.8rem;
+  color:var(--gold);letter-spacing:0.08em;line-height:1;margin-bottom:3px;
+  text-shadow:0 2px 12px rgba(0,0,0,0.6);
+}
+.product-name{
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1rem;
+  color:var(--white);letter-spacing:0.14em;text-transform:uppercase;
+  margin-bottom:12px;
+  text-shadow:0 1px 6px rgba(0,0,0,0.5);
+}
+.product-desc{
+  display:none;
+}
+.product-uses{display:flex;flex-wrap:wrap;gap:6px;}
+.use-tag{
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.85rem;
+  color:rgba(255,255,255,0.9);letter-spacing:0.1em;text-transform:uppercase;
+  padding:6px 16px;border:1px solid rgba(255,255,255,0.2);border-radius:2px;
+}
+.product-top-tag{
+  position:absolute;top:20px;left:20px;
+  background:var(--gold);padding:8px 18px;border-radius:2px;
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.95rem;
+  color:var(--ink);letter-spacing:0.18em;text-transform:uppercase;
+  z-index:3;
+  box-shadow:0 2px 12px rgba(0,0,0,0.4);
+}
+
+/* Product detail expanded */
+.product-detail{
+  background:var(--off);
+  padding:60px 5%;margin-top:60px;display:none;
+}
+.product-spec-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:24px;
+}
+.spec-item{background:var(--white);padding:24px;border-left:3px solid var(--gold);}
+.spec-label{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.7rem;color:var(--muted);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:6px;}
+.spec-value{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.1rem;color:var(--ink);}
+
+/* Specs table */
+.specs-section{background:var(--off);padding:100px 5%;}
+.specs-table{width:100%;border-collapse:collapse;margin-top:40px;}
+.specs-table th{
+  background:var(--ink);color:var(--gold);
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.78rem;
+  letter-spacing:0.18em;text-transform:uppercase;
+  padding:16px 20px;text-align:left;
+}
+.specs-table td{
+  padding:14px 20px;font-size:0.92rem;border-bottom:1px solid var(--steel);
+  font-family:'Rajdhani',sans-serif;font-weight:500;
+}
+.specs-table tr:hover td{background:rgba(200,160,53,0.04);}
+.specs-table td:first-child{font-weight:700;color:var(--ink);}
+
+/* ===================== MANUFACTURING ===================== */
+.manufacturing{background:var(--ink);padding:100px 5%;}
+.process-steps{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:2px;
+  margin-top:60px;position:relative;
+}
+.process-steps::before{content:none;}
+.process-step{text-align:center;padding:20px 12px;position:relative;}
+.step-num{
+  width:72px;height:72px;border-radius:50%;
+  background:rgba(200,160,53,0.1);
+  border:1px solid rgba(200,160,53,0.35);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 20px;
+  font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:var(--gold);
+  position:relative;z-index:1;
+}
+.step-title{
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1rem;
+  color:var(--white);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;
+}
+.step-desc{font-size:0.78rem;color:rgba(255,255,255,0.4);line-height:1.5;}
+
+/* ===================== WHY US ===================== */
+#why-us{background:var(--off);}
+.why-us-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;
+}
+.strengths-list{display:flex;flex-direction:column;gap:16px;}
+.strength-item{
+  display:flex;align-items:flex-start;gap:20px;
+  background:var(--white);padding:24px 28px;
+  border-radius:2px;border-left:3px solid var(--gold);
+  transition:all 0.25s;
+}
+.strength-item:hover{
+  box-shadow:0 8px 32px rgba(0,0,0,0.08);transform:translateX(4px);
+}
+.strength-num{
+  font-family:'Bebas Neue',sans-serif;font-size:2rem;
+  color:var(--gold);opacity:0.4;line-height:1;flex-shrink:0;width:40px;
+}
+.strength-content h4{
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.25rem;
+  color:var(--ink);letter-spacing:0.06em;margin-bottom:4px;
+}
+.strength-content p{font-size:0.88rem;color:var(--muted);line-height:1.6;}
+.why-us-right{
+  position:sticky;top:100px;
+}
+.quality-cert{
+  background:var(--ink);padding:40px;border-radius:2px;margin-bottom:24px;
+}
+.quality-cert h4{
+  font-family:'Bebas Neue',sans-serif;font-size:2.2rem;
+  color:var(--white);letter-spacing:0.06em;margin-bottom:20px;
+}
+.cert-list{display:flex;flex-direction:column;gap:12px;}
+.cert-item{
+  display:flex;align-items:center;gap:12px;
+  padding:12px 16px;border:1px solid rgba(200,160,53,0.2);border-radius:2px;
+}
+.cert-icon{color:var(--gold);font-size:1.2rem;flex-shrink:0;}
+.cert-text{
+  font-family:'Rajdhani',sans-serif;font-weight:600;font-size:0.88rem;
+  color:rgba(255,255,255,0.8);letter-spacing:0.06em;
+}
+
+/* ===================== INDUSTRIES ===================== */
+.industries{background:var(--ink);padding:100px 5%;}
+.industries-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:2px;
+  background:rgba(200,160,53,0.1);margin-top:60px;
+}
+.industry-card{
+  background:var(--ink);padding:36px 28px;
+  border-bottom:2px solid transparent;
+  transition:all 0.3s;cursor:default;
+}
+.industry-card:hover{
+  background:rgba(200,160,53,0.05);border-bottom-color:var(--gold);
+}
+.industry-icon{
+  font-size:2.4rem;margin-bottom:18px;display:block;
+}
+.industry-name{
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.25rem;
+  color:var(--white);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;
+}
+.industry-desc{font-size:0.83rem;color:rgba(255,255,255,0.4);line-height:1.6;}
+
+/* ===================== CAREERS ===================== */
+#careers{background:var(--white);padding:100px 5%;}
+.careers-intro{
+  display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;
+}
+.careers-left .section-desc{max-width:100%;}
+.perks-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px;
+}
+.perk-item{
+  display:flex;align-items:flex-start;gap:12px;padding:20px;
+  background:var(--off);border-radius:2px;
+}
+.perk-icon{font-size:1.4rem;flex-shrink:0;margin-top:2px;}
+.perk-text h5{
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.1rem;
+  color:var(--ink);letter-spacing:0.06em;margin-bottom:3px;
+}
+.perk-text p{font-size:0.82rem;color:var(--muted);}
+
+/* Careers Form */
+.careers-form{
+  background:var(--ink);padding:40px;border-radius:2px;
+}
+.form-title{
+  font-family:'Bebas Neue',sans-serif;font-size:2.4rem;
+  color:var(--white);letter-spacing:0.06em;margin-bottom:28px;
+  padding-bottom:16px;border-bottom:1px solid rgba(200,160,53,0.2);
+}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.form-group{margin-bottom:18px;}
+.form-group label{
+  display:block;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.72rem;
+  color:var(--gold);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:8px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea{
+  width:100%;padding:12px 16px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:2px;color:var(--white);
+  font-family:'DM Sans',sans-serif;font-size:0.9rem;
+  outline:none;transition:all 0.25s;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder{color:rgba(255,255,255,0.25);}
+.form-group select option{background:var(--ink);}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+  border-color:var(--gold);background:rgba(200,160,53,0.05);
+}
+.form-group textarea{resize:vertical;min-height:100px;}
+.file-upload{
+  border:1px dashed rgba(255,255,255,0.2);padding:20px;text-align:center;
+  border-radius:2px;cursor:pointer;transition:border-color 0.25s;
+}
+.file-upload:hover{border-color:var(--gold);}
+.file-upload input{display:none;}
+.file-upload-text{
+  font-family:'Rajdhani',sans-serif;font-weight:600;font-size:0.82rem;
+  color:rgba(255,255,255,0.4);letter-spacing:0.1em;text-transform:uppercase;
+}
+.file-upload-text span{color:var(--gold);}
+.form-submit{
+  width:100%;padding:16px;
+  background:var(--gold);color:var(--ink);
+  border:none;cursor:pointer;border-radius:2px;
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1rem;
+  letter-spacing:0.18em;text-transform:uppercase;
+  transition:all 0.25s;margin-top:8px;
+}
+.form-submit:hover{background:var(--gold-light);transform:translateY(-1px);}
+
+/* ===================== ENQUIRY ===================== */
+#enquiry{background:var(--off);padding:100px 5%;}
+.enquiry-grid{
+  display:grid;grid-template-columns:1fr 1.6fr;gap:80px;align-items:start;
+}
+.enquiry-left{}
+.contact-blocks{margin-top:32px;display:flex;flex-direction:column;gap:20px;}
+.contact-block{
+  display:flex;align-items:flex-start;gap:16px;
+  padding:20px;background:var(--white);border-radius:2px;
+  border-left:3px solid var(--gold);
+}
+.contact-block-icon{
+  width:44px;height:44px;background:#e8edf2;border-radius:2px;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  font-size:1.2rem;
+}
+.contact-block-label{
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.7rem;
+  color:var(--muted);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:4px;
+}
+.contact-block-val{
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1rem;
+  color:var(--ink);
+}
+.contact-block-val a{color:var(--ink);text-decoration:none;}
+.contact-block-val a:hover{color:var(--gold);}
+.enquiry-form-wrap{
+  background:var(--white);padding:48px;
+  border-radius:2px;
+  box-shadow:0 4px 40px rgba(0,0,0,0.06);
+}
+.enquiry-form-wrap .form-group label{color:var(--ink);}
+.enquiry-form-wrap .form-group input,
+.enquiry-form-wrap .form-group select,
+.enquiry-form-wrap .form-group textarea{
+  background:var(--off);border:1.5px solid var(--steel);
+  color:var(--ink);
+}
+.enquiry-form-wrap .form-group input::placeholder,
+.enquiry-form-wrap .form-group textarea::placeholder{color:var(--silver);}
+.enquiry-form-wrap .form-group input:focus,
+.enquiry-form-wrap .form-group select:focus,
+.enquiry-form-wrap .form-group textarea:focus{
+  border-color:var(--gold);background:var(--white);
+}
+.form-success-msg{
+  display:none;text-align:center;padding:24px;
+  background:rgba(200,160,53,0.12);border:1px solid var(--gold);
+  border-radius:2px;color:var(--white);margin-top:16px;
+}
+.form-success-msg h4{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.1rem;color:var(--gold);margin-bottom:6px;}
+
+/* ===================== FOOTER ===================== */
+footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:48px 5% 24px;}
+.footer-inner{max-width:1280px;margin:0 auto;}
+.footer-top{
+  display:grid;grid-template-columns:1fr 1fr;gap:40px;
+  padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,0.08);
+  margin-bottom:20px;
+}
+.footer-logo-img{
+  width:64px;height:64px;border-radius:50%;
+  object-fit:contain;border:1.5px solid rgba(200,160,53,0.4);
+  margin-bottom:18px;
+  mix-blend-mode:screen;
+}
+.footer-brand-name{
+  font-family:'Bebas Neue',sans-serif;font-size:1.4rem;
+  color:var(--white);letter-spacing:0.08em;margin-bottom:4px;
+}
+.footer-brand-tag{
+  font-family:'Rajdhani',sans-serif;font-size:0.65rem;color:var(--gold);
+  letter-spacing:0.22em;text-transform:uppercase;font-weight:600;margin-bottom:16px;
+}
+.footer-brand p{font-size:0.88rem;line-height:1.7;max-width:260px;}
+.footer-col h5{
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.72rem;
+  color:var(--gold);letter-spacing:0.25em;text-transform:uppercase;margin-bottom:14px;
+}
+.footer-col ul{list-style:none;}
+.footer-col ul li{margin-bottom:7px;}
+.footer-col ul li{margin-bottom:12px;}
+.footer-col ul li a{
+  color:rgba(255,255,255,0.55);text-decoration:none;
+  font-size:0.85rem;transition:color 0.2s;
+}
+.footer-col ul li a:hover{color:var(--gold);}
+.footer-col address{font-size:0.82rem;line-height:1.75;font-style:normal;font-size:0.88rem;line-height:1.9;}
+.footer-bottom{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:0.75rem;color:rgba(255,255,255,0.3);
+}
+.footer-bottom-tag{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:0.9rem;color:var(--gold);letter-spacing:0.12em;
+}
+
+/* ===================== RESPONSIVE ===================== */
+/* ─── 1024px ─── */
+@media(max-width:1024px){
+  .product-card{height:480px;}
+  .hero-inner{grid-template-columns:1fr;text-align:center;}
+  .hero-right{display:none;}
+  .hero-btns{justify-content:center;}
+  .hero-eyebrow{justify-content:center;}
+  .about-grid,.products-intro,.enquiry-grid,.careers-intro,.why-us-grid,.vm-grid{
+    grid-template-columns:1fr;gap:36px;
+  }
+  .process-steps{grid-template-columns:repeat(2,1fr);}
+  .industries-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-top{grid-template-columns:1fr 1fr;gap:30px;}
+  .nav-links{gap:2px;}
+  .nav-links a{font-size:0.74rem;padding:8px 8px;}
+  .section{padding:70px 5%;}
+  .manufacturing,.industries{padding:70px 5%;}
+  #careers{padding:70px 5%;}
+  #enquiry{padding:70px 5%;}
+}
+
+/* ─── 900px — hamburger kicks in ─── */
+@media(max-width:900px){
+  .nav-links{display:none;}
+  .hamburger{display:flex;}
+  .hero-heading{font-size:clamp(3.2rem,12vw,5.5rem);}
+  .form-row{grid-template-columns:1fr;}
+  .process-steps{grid-template-columns:1fr 1fr;}
+  .industries-grid{grid-template-columns:1fr 1fr;}
+  .footer-top{grid-template-columns:1fr 1fr;gap:28px;}
+  .perks-grid{grid-template-columns:1fr 1fr;}
+  .enquiry-grid{grid-template-columns:1fr;}
+  .careers-intro{grid-template-columns:1fr;}
+  .why-us-right{position:static;}
+  .vm-grid{grid-template-columns:1fr;}
+  .about-grid{grid-template-columns:1fr;}
+}
+
+/* ─── 640px ─── */
+@media(max-width:640px){
+  nav{padding:0 4%;}
+  .nav-brand-name{font-size:1rem;}
+  .nav-brand-sub{display:none;}
+  .section{padding:56px 4%;}
+  .manufacturing,.industries{padding:56px 4%;}
+  #careers{padding:56px 4%;}
+  #enquiry{padding:56px 4%;}
+  .hero{min-height:auto;padding-top:90px;padding-bottom:40px;}
+  .hero-inner{padding:40px 4%;}
+  .hero-heading{font-size:clamp(3rem,15vw,5rem);}
+  .hero-tagline{font-size:0.93rem;}
+  .hero-btns{gap:10px;}
+  .btn-gold,.btn-ghost{padding:12px 24px;font-size:0.85rem;}
+  .hero-tagline{max-width:100%;}
+  .section-desc{max-width:100%;}
+  .industries-grid{grid-template-columns:1fr 1fr;}
+  .process-steps{grid-template-columns:1fr 1fr;}
+  .perks-grid{grid-template-columns:1fr;}
+  .section-title{font-size:2.2rem;}
+  .footer-top{grid-template-columns:1fr;gap:32px;}
+  .footer-bottom{flex-direction:column;gap:8px;text-align:center;}
+  .enquiry-form-wrap{padding:28px 18px;}
+  .careers-form{padding:28px 18px;}
+  .quality-cert{padding:28px;}
+  .strength-item{padding:18px 20px;}
+  .vm-card{padding:28px;}
+  .ticker-inner span{font-size:0.78rem;padding:0 24px;}
+}
+
+/* ─── 420px ─── */
+@media(max-width:420px){
+  .hero-heading{font-size:clamp(2.6rem,16vw,4.5rem);}
+  nav{height:60px;}
+  .mobile-menu{top:74px;}
+  .hero{padding-top:74px;}
+  .hero-inner{padding:32px 4%;}
+  .industries-grid{grid-template-columns:1fr;}
+  .process-steps{grid-template-columns:1fr;}
+  .section-title{font-size:1.9rem;}
+  .section{padding:48px 4%;}
+  .manufacturing,.industries{padding:48px 4%;}
+  #careers{padding:48px 4%;}
+  #enquiry{padding:48px 4%;}
+  .enquiry-form-wrap{padding:22px 14px;}
+  .careers-form{padding:22px 14px;}
+  .products-intro{margin-bottom:32px;}
+  .why-us-grid{grid-template-columns:1fr;}
+  .perks-grid{grid-template-columns:1fr;}
+  footer{padding:48px 4% 24px;}
+  .maps-btn{padding:14px 14px;gap:12px;}
+  .contact-block{padding:14px 14px;}
+  .contact-block-icon{width:36px;height:36px;font-size:1rem;}
+  .contact-block-val{font-size:0.88rem;}
+  .nav-brand-name{font-size:0.95rem;}
+}
+
+
+
+/* ===================== HERO STATS BLOCK ===================== */
+.hero-stats-block{
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(200,160,53,0.18);
+  border-radius:2px;
+  padding:32px;
+  backdrop-filter:blur(8px);
+  width:100%;max-width:380px;
+  position:relative;
+}
+.hero-stats-block::before{
+  content:'';position:absolute;top:0;left:0;width:3px;height:100%;
+  background:linear-gradient(to bottom,var(--gold),rgba(200,160,53,0.3));
+  border-radius:2px 0 0 2px;
+}
+.hero-stat-row{
+  display:grid;grid-template-columns:1fr auto 1fr;
+  align-items:center;gap:0;
+  padding-bottom:24px;margin-bottom:20px;
+  border-bottom:1px solid rgba(200,160,53,0.12);
+}
+.hero-stat{text-align:center;}
+.hero-stat-num{
+  font-family:'Bebas Neue',sans-serif;font-size:2.4rem;
+  color:var(--gold);letter-spacing:0.08em;line-height:1;margin-bottom:6px;
+}
+.hero-stat-label{
+  font-family:'Rajdhani',sans-serif;font-weight:600;font-size:0.72rem;
+  color:rgba(255,255,255,0.5);letter-spacing:0.1em;text-transform:uppercase;
+  line-height:1.4;
+}
+.hero-stat-divider{
+  width:1px;height:60px;background:rgba(200,160,53,0.2);margin:0 20px;
+}
+.hero-stat-full{
+  display:flex;align-items:center;gap:14px;
+  padding:11px 0;border-bottom:1px solid rgba(255,255,255,0.05);
+}
+.hero-stat-full:last-child{border-bottom:none;}
+.hero-stat-full-icon{
+  width:36px;height:36px;border-radius:2px;
+  background:rgba(200,160,53,0.1);
+  border:1px solid rgba(200,160,53,0.2);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;color:var(--gold);
+}
+.hero-stat-full-label{
+  font-family:'Rajdhani',sans-serif;font-weight:600;font-size:0.85rem;
+  color:rgba(255,255,255,0.75);letter-spacing:0.04em;
+}
+
+
+.hero-slogan{
+  font-family:'Rajdhani',sans-serif;font-weight:700;
+  font-size:clamp(1.1rem,2vw,1.5rem);
+  color:var(--gold);letter-spacing:0.18em;text-transform:uppercase;
+  margin-bottom:16px;
+  text-shadow:0 2px 8px rgba(0,0,0,0.5);
+}
+
+/* ===================== MAPS BUTTON ===================== */
+.maps-btn{
+  display:flex;align-items:center;gap:16px;
+  padding:16px 20px;
+  background:var(--white);border:1.5px solid var(--gold);
+  border-radius:2px;text-decoration:none;
+  transition:all 0.25s;margin-top:4px;
+}
+.maps-btn:hover{background:rgba(200,160,53,0.06);transform:translateX(4px);}
+.maps-btn-icon{
+  width:44px;height:44px;background:#e8edf2;border-radius:2px;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.maps-btn-label{
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1rem;
+  color:var(--ink);margin-bottom:2px;
+}
+.maps-btn-sub{font-size:0.8rem;color:var(--muted);line-height:1.4;}
+.maps-btn-arrow{
+  margin-left:auto;flex-shrink:0;
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.2rem;
+  color:var(--gold);transition:transform 0.2s;
+}
+.maps-btn:hover .maps-btn-arrow{transform:translateX(4px);}
+
+
+/* ===================== SEARCH ===================== */
+.nav-search-btn{
+  background:none;border:none;cursor:pointer;
+  color:rgba(255,255,255,0.7);padding:8px;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:3px;transition:color 0.2s;margin-right:4px;
+}
+.nav-search-btn:hover{color:var(--gold);}
+.search-overlay{
+  display:none;position:fixed;inset:0;z-index:1100;
+  background:rgba(5,10,20,0.96);
+  backdrop-filter:blur(12px);
+  flex-direction:column;align-items:center;justify-content:center;
+  padding:40px 5%;
+}
+.search-overlay.open{display:flex;}
+.search-box{
+  width:100%;max-width:640px;
+  display:flex;align-items:center;gap:12px;
+  border-bottom:2px solid var(--gold);
+  padding-bottom:12px;margin-bottom:28px;
+}
+.search-box input{
+  flex:1;background:none;border:none;outline:none;
+  font-family:'Rajdhani',sans-serif;font-weight:600;
+  font-size:clamp(1.2rem,3vw,1.8rem);
+  color:var(--white);letter-spacing:0.04em;
+}
+.search-box input::placeholder{color:rgba(255,255,255,0.25);}
+.search-close{
+  background:none;border:none;color:rgba(255,255,255,0.5);
+  cursor:pointer;padding:4px;transition:color 0.2s;
+}
+.search-close:hover{color:var(--gold);}
+.search-hints{display:flex;flex-wrap:wrap;gap:10px;}
+.search-hints span{
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.78rem;
+  color:rgba(255,255,255,0.4);letter-spacing:0.15em;text-transform:uppercase;
+  padding:7px 16px;border:1px solid rgba(255,255,255,0.12);
+  border-radius:2px;cursor:pointer;transition:all 0.2s;
+}
+.search-hints span:hover{border-color:var(--gold);color:var(--gold);}
+
+/* ===================== ANIMATIONS ===================== */
+.fade-up{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease;}
+.fade-up.visible{opacity:1;transform:translateY(0);}
+.fade-in{opacity:0;transition:opacity 0.7s ease;}
+.fade-in.visible{opacity:1;}
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav>
+  <a href="#home" class="nav-logo">
+    <div style="width:62px;height:62px;border-radius:50%;border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;background:transparent;padding:2px;">
+      <img src="logo.png" alt="Gravity Metal Logo" style="width:58px;height:58px;object-fit:cover;border-radius:50%;mix-blend-mode:screen;" />
+    </div>
+    <div class="nav-brand-wrap">
+      <span class="nav-brand-name">Gravity Metal Private Limited</span>
+      <span class="nav-brand-sub">Aluminium Wire Rod Manufacturer</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#why-us">Why Us</a></li>
+    <li><a href="#careers">Careers</a></li>
+    <li><a href="#enquiry" class="nav-cta">Get Quote</a></li>
+  </ul>
+  <button class="nav-search-btn" onclick="toggleSearch()" aria-label="Search">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+  </button>
+  <button class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+    <li><a href="#about" onclick="toggleMenu()">About Us</a></li>
+    <li><a href="#products" onclick="toggleMenu()">Products</a></li>
+    <li><a href="#why-us" onclick="toggleMenu()">Why Choose Us</a></li>
+    <li><a href="#careers" onclick="toggleMenu()">Careers</a></li>
+    <li><a href="#enquiry" onclick="toggleMenu()">Get Quote</a></li>
+  </ul>
+</div>
+
+<!-- Search Overlay -->
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search products, information..." onkeydown="handleSearch(event)" autocomplete="off"/>
+    <button onclick="toggleSearch()" class="search-close">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="search-hints">
+    <span onclick="searchGo('EC Grade')">EC Grade</span>
+    <span onclick="searchGo('CG Grade')">CG Grade</span>
+    <span onclick="searchGo('Flipping Coil')">Flipping Coil</span>
+    <span onclick="searchGo('Contact')">Contact Us</span>
+    <span onclick="searchGo('Careers')">Careers</span>
+  </div>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="home">
+  <!-- Full bleed dark overlay on product-fc image -->
+  <div class="hero-photo-bg">
+    <img src="hero.jpg" loading="eager" fetchpriority="high" alt="Gravity Metal Manufacturing" class="hero-photo-img"/>
+    <div class="hero-photo-overlay"></div>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="hero-eyebrow-text">Aluminium Wire Rod Manufacturer · Raipur, India</span>
+      </div>
+      <h1 class="hero-heading">
+        GRAVITY
+        <span>METAL</span>
+      </h1>
+      <p class="hero-slogan">Strong Wire Rod for a Strong India</p>
+      <p class="hero-tagline">India's trusted aluminium wire rod manufacturer — delivering EC Grade, Commercial Grade &amp; Flipping Coil products to conductor and cable industries across the nation.</p>
+      <div class="hero-btns">
+        <a href="#products" class="btn-gold">Explore Products</a>
+        <a href="#enquiry" class="btn-ghost">Request Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TICKER ===================== -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-inner" id="tickerContent">
+    <span>EC Grade Aluminium Wire Rod</span>
+    <span>Commercial Grade Wire Rod</span>
+    <span>Flipping Coil</span>
+    <span>Aluminium Wire Rod Manufacturer</span>
+    <span>Raipur, Chhattisgarh</span>
+    <span>Strong Wire Rod for a Strong India</span>
+    <span>EC Grade Aluminium Wire Rod</span>
+    <span>Commercial Grade Wire Rod</span>
+    <span>Flipping Coil</span>
+    <span>Aluminium Wire Rod Manufacturer</span>
+    <span>Raipur, Chhattisgarh</span>
+    <span>Strong Wire Rod for a Strong India</span>
+  </div>
+</div>
+
+
+
+
+
+<!-- ===================== ABOUT ===================== -->
+<section class="section" id="about" style="background:var(--off)">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="fade-up">
+        <!-- Company facts panel instead of illustration -->
+        <div style="background:var(--ink);border-radius:2px;padding:48px;position:relative;overflow:hidden;">
+          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:var(--gold);"></div>
+          <div style="font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.72rem;color:var(--gold);letter-spacing:0.3em;text-transform:uppercase;margin-bottom:24px;">Company Overview</div>
+          <div style="display:flex;flex-direction:column;gap:20px;">
+
+            <div style="display:flex;gap:18px;align-items:flex-start;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,0.07);">
+              <div style="flex-shrink:0;width:44px;height:44px;display:flex;align-items:center;justify-content:center;">
+                <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="38" height="38">
+                  <ellipse cx="22" cy="24" rx="18" ry="7" stroke="#c8a035" stroke-width="2"/>
+                  <ellipse cx="22" cy="20" rx="18" ry="7" stroke="#c8a035" stroke-width="2"/>
+                  <ellipse cx="22" cy="16" rx="18" ry="7" stroke="#c8a035" stroke-width="2"/>
+                </svg>
+              </div>
+              <div>
+                <div style="font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1rem;color:var(--white);margin-bottom:3px;">3 Product Lines</div>
+                <div style="font-size:0.83rem;color:rgba(255,255,255,0.45);line-height:1.6;">EC Grade · Commercial Grade · Flipping Coil</div>
+              </div>
+            </div>
+
+            <div style="display:flex;gap:18px;align-items:flex-start;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,0.07);">
+              <div style="flex-shrink:0;width:44px;height:44px;display:flex;align-items:center;justify-content:center;">
+                <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="38" height="38">
+                  <circle cx="22" cy="22" r="16" stroke="#c8a035" stroke-width="2"/>
+                  <path d="M6 22h32M22 6c-3.5 4.5-6 10-6 16s2.5 11.5 6 16M22 6c3.5 4.5 6 10 6 16s-2.5 11.5-6 16" stroke="#c8a035" stroke-width="1.6"/>
+                  <path d="M9 15h26M9 29h26" stroke="#c8a035" stroke-width="1.6"/>
+                </svg>
+              </div>
+              <div>
+                <div style="font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1rem;color:var(--white);margin-bottom:3px;">PAN India Reach</div>
+                <div style="font-size:0.83rem;color:rgba(255,255,255,0.45);line-height:1.6;">Supplying conductor and cable manufacturers across India</div>
+              </div>
+            </div>
+
+            <div style="display:flex;gap:18px;align-items:flex-start;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,0.07);">
+              <div style="flex-shrink:0;width:44px;height:44px;display:flex;align-items:center;justify-content:center;">
+                <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="38" height="38">
+                  <rect x="7" y="5" width="24" height="30" rx="2" stroke="#c8a035" stroke-width="2"/>
+                  <path d="M13 15h12M13 20h9" stroke="#c8a035" stroke-width="1.8" stroke-linecap="round"/>
+                  <circle cx="32" cy="34" r="7" stroke="#c8a035" stroke-width="2"/>
+                  <polyline points="29 34 31.5 36.5 36 31.5" stroke="#c8a035" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <div style="font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1rem;color:var(--white);margin-bottom:3px;">100% Quality Certified Lots</div>
+                <div style="font-size:0.83rem;color:rgba(255,255,255,0.45);line-height:1.6;">In-house lab with world-class testing equipment — test certificate with every dispatch</div>
+              </div>
+            </div>
+
+            <div style="display:flex;gap:18px;align-items:flex-start;">
+              <div style="flex-shrink:0;width:44px;height:44px;display:flex;align-items:center;justify-content:center;">
+                <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="38" height="38">
+                  <path d="M4 13h24v20H4z" stroke="#c8a035" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M28 18h7l5 7v8H28V18z" stroke="#c8a035" stroke-width="2" stroke-linejoin="round"/>
+                  <circle cx="10" cy="35" r="3.5" stroke="#c8a035" stroke-width="1.8"/>
+                  <circle cx="34" cy="35" r="3.5" stroke="#c8a035" stroke-width="1.8"/>
+                  <path d="M13 24h7" stroke="#c8a035" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div>
+                <div style="font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1rem;color:var(--white);margin-bottom:3px;">Fast Dispatch &amp; Delivery</div>
+                <div style="font-size:0.83rem;color:rgba(255,255,255,0.45);line-height:1.6;">Reliable supply schedules to keep your production running</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-up">
+        <div class="section-tag">
+          <div class="section-tag-line"></div>
+          <span class="section-tag-text">About Us</span>
+        </div>
+        <h2 class="section-title">Who We Are</h2>
+        <p class="section-desc">Gravity Metal Private Limited is a leading aluminium wire rod manufacturer based in Raipur, Chhattisgarh. We are committed to delivering consistent quality and reliable supply to conductor manufacturers, cable industries, and rolling mills across India.</p>
+        <p class="section-desc" style="margin-top:14px;">Our state-of-the-art facility near Raipur uses advanced casting and rolling technology to produce EC Grade, Commercial Grade, and Flipping Coil aluminium wire rods to meet the most demanding industry specifications.</p>
+
+        <div class="about-list">
+          <div class="about-list-item">
+            <div class="about-bullet">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l4 4 6-6" stroke="#c8a035" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="about-list-text">
+              <h5>Advanced Manufacturing Facility</h5>
+              <p>Modern aluminium casting and continuous rolling setup with world-class machinery — engineered for dimensional precision, consistent surface quality, and high output reliability.</p>
+            </div>
+          </div>
+          <div class="about-list-item">
+            <div class="about-bullet">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l4 4 6-6" stroke="#c8a035" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="about-list-text">
+              <h5>In-House Quality Lab with World-Class Equipment</h5>
+              <p>We operate a dedicated quality lab equipped with world-class testing machinery. Every lot undergoes rigorous mechanical and electrical testing — tensile strength, elongation and conductivity — before dispatch. A test certificate accompanies every single order.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vision & Mission -->
+    <div class="vm-grid fade-up" style="margin-top:60px;">
+      <div class="vm-card">
+        <div class="vm-card-icon">◎</div>
+        <div class="vm-card-tag">Our Vision</div>
+        <h4>To Lead with Quality</h4>
+        <p>To emerge as the most trusted aluminium wire rod manufacturer in India — known for world-class quality backed by our in-house testing lab, timely supply, and long-term partnerships that power India's electrical infrastructure.</p>
+      </div>
+      <div class="vm-card">
+        <div class="vm-card-icon">◉</div>
+        <div class="vm-card-tag">Our Mission</div>
+        <h4>Strong Wire Rod, Strong India</h4>
+        <p>To produce high-quality aluminium wire rods that meet the dynamic demands of the electrical, cable, and manufacturing industries — backed by world-class lab equipment, rigorous testing at every stage, and an unwavering commitment to every client.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRODUCTS ===================== -->
+<section class="section" id="products">
+  <div class="section-inner">
+    <div class="products-intro">
+      <div class="fade-up">
+        <div class="section-tag">
+          <div class="section-tag-line"></div>
+          <span class="section-tag-text">Our Products</span>
+        </div>
+        <h2 class="section-title">Aluminium Wire Rod Range</h2>
+      </div>
+      <div class="fade-up">
+        <p class="section-desc">We manufacture three distinct grades of aluminium wire rods, each engineered to meet specific industry applications — from high-conductivity electrical conductors to steel plant flipping coils.</p>
+        <p style="margin-top:12px;font-size:0.88rem;color:var(--muted);line-height:1.7;">*Available in coil weights as per customer requirements.</p>
+      </div>
+    </div>
+
+    <div class="products-grid">
+      <!-- EC Grade -->
+      <div class="product-card fade-up">
+        <div class="product-img-wrap">
+          <img src="product-1.jpg" loading="lazy" decoding="async" alt="EC Grade" loading="lazy" style="object-position:center center;"/>
+        </div>
+        <div class="product-overlay"></div>
+        <div class="product-top-tag">EC Grade</div>
+        <div class="product-content">
+          <div class="product-abbr">EC</div>
+          <div class="product-name">Electrical Conductor Grade</div>
+          <div class="product-uses"><span class="use-tag">Conductor</span><span class="use-tag">Cables</span><span class="use-tag">Power Lines</span><span class="use-tag">ACSR</span></div>
+        </div>
+      </div>
+
+      <!-- CG Grade -->
+      <div class="product-card fade-up">
+        <div class="product-img-wrap">
+          <img src="product-2.jpg" loading="lazy" decoding="async" alt="CG Grade" loading="lazy" style="object-position:center center;"/>
+        </div>
+        <div class="product-overlay"></div>
+        <div class="product-top-tag">CG Grade</div>
+        <div class="product-content">
+          <div class="product-abbr">CG</div>
+          <div class="product-name">Commercial Grade</div>
+          <div class="product-uses"><span class="use-tag">Conductor</span><span class="use-tag">General Electrical</span><span class="use-tag">Cables</span></div>
+        </div>
+      </div>
+
+      <!-- Flipping Coil -->
+      <div class="product-card fade-up">
+        <div class="product-img-wrap">
+          <img src="product-3.jpg" loading="lazy" decoding="async" alt="Flipping Coil" loading="lazy" style="object-position:center 40%;"/>
+        </div>
+        <div class="product-overlay"></div>
+        <div class="product-top-tag">Industrial</div>
+        <div class="product-content">
+          <div class="product-abbr">FC</div>
+          <div class="product-name">Flipping Coil</div>
+          <div class="product-uses"><span class="use-tag">Steel Industry</span><span class="use-tag">Rolling Mills</span></div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<!-- ===================== MANUFACTURING PROCESS ===================== -->
+<div class="manufacturing">
+  <div class="section-inner">
+    <div class="section-tag fade-up">
+      <div class="section-tag-line"></div>
+      <span class="section-tag-text" style="color:var(--gold);">Manufacturing</span>
+    </div>
+    <h2 class="section-title light fade-up">Our Process</h2>
+
+    <div class="process-steps">
+      <div class="process-step fade-up">
+        <div class="step-num">01</div>
+        <div class="step-title">Raw Material</div>
+        <div class="step-desc">Premium grade aluminium ingots sourced from certified suppliers</div>
+      </div>
+      <div class="process-step fade-up">
+        <div class="step-num">02</div>
+        <div class="step-title">Melting & Alloying</div>
+        <div class="step-desc">Precision melting in induction furnaces with strict composition control</div>
+      </div>
+      <div class="process-step fade-up">
+        <div class="step-num">03</div>
+        <div class="step-title">Continuous Casting</div>
+        <div class="step-desc">CCR technology for uniform grain structure and consistent surface quality</div>
+      </div>
+      <div class="process-step fade-up">
+        <div class="step-num">04</div>
+        <div class="step-title">Rolling</div>
+        <div class="step-desc">Multi-pass rolling mill producing precise, consistent wire rod dimensions</div>
+      </div>
+      <div class="process-step fade-up">
+        <div class="step-num">05</div>
+        <div class="step-title">Quality Control</div>
+        <div class="step-desc">Dedicated in-house lab with world-class testing machinery — tensile strength, elongation and electrical conductivity verified on every single lot before approval</div>
+      </div>
+      <div class="process-step fade-up">
+        <div class="step-num">06</div>
+        <div class="step-title">Coiling & Dispatch</div>
+        <div class="step-desc">Approved lots are neatly coiled, strapped and dispatched with a test certificate — ensuring traceability from plant to customer</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== INDUSTRIES SERVED ===================== -->
+<div class="industries">
+  <div class="section-inner">
+    <div class="section-tag fade-up">
+      <div class="section-tag-line"></div>
+      <span class="section-tag-text" style="color:var(--gold);">Industries Served</span>
+    </div>
+    <h2 class="section-title light fade-up">Who We Supply To</h2>
+
+    <div class="industries-grid">
+      <div class="industry-card fade-up">
+        <span class="industry-icon">⚡</span>
+        <div class="industry-name">Power & Electrical</div>
+        <div class="industry-desc">Conductor manufacturers, transmission line companies, power utilities</div>
+      </div>
+      <div class="industry-card fade-up">
+        <span class="industry-icon">🔌</span>
+        <div class="industry-name">Cable Industry</div>
+        <div class="industry-desc">LT/HT cable manufacturers, wiring and harness companies</div>
+      </div>
+      <div class="industry-card fade-up">
+        <span class="industry-icon">🏭</span>
+        <div class="industry-name">Steel & Rolling</div>
+        <div class="industry-desc">Rolling mills, steel plants using flipping coils as raw material</div>
+      </div>
+      <div class="industry-card fade-up">
+        <span class="industry-icon">🔧</span>
+        <div class="industry-name">Conductor Plants</div>
+        <div class="industry-desc">Aluminium conductor manufacturers, ACSR plants, and overhead transmission line producers</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== WHY US ===================== -->
+<section class="section" id="why-us">
+  <div class="section-inner">
+    <div class="why-us-grid">
+      <div>
+        <div class="section-tag fade-up">
+          <div class="section-tag-line"></div>
+          <span class="section-tag-text">Why Choose Us</span>
+        </div>
+        <h2 class="section-title fade-up">The Gravity Metal Advantage</h2>
+        <p class="section-desc fade-up" style="margin-bottom:36px;">Built on a foundation of technical expertise, strong supplier relationships, and an uncompromising commitment to quality — we deliver more than wire rod.</p>
+
+        <div class="strengths-list">
+          <div class="strength-item fade-up">
+            <div class="strength-num">01</div>
+            <div class="strength-content">
+              <h4>Consistent Quality Every Batch</h4>
+              <p>Every coil undergoes mechanical and electrical testing — conductivity, tensile strength, and elongation verified before dispatch.</p>
+            </div>
+          </div>
+          <div class="strength-item fade-up">
+            <div class="strength-num">02</div>
+            <div class="strength-content">
+              <h4>Reliable & Timely Supply</h4>
+              <p>Steady production schedule with adequate inventory to ensure your manufacturing line never faces delays.</p>
+            </div>
+          </div>
+          <div class="strength-item fade-up">
+            <div class="strength-num">03</div>
+            <div class="strength-content">
+              <h4>Competitive Pricing</h4>
+              <p>Direct manufacturer pricing without middlemen — transparent rates linked to LME with fair processing margins.</p>
+            </div>
+          </div>
+          <div class="strength-item fade-up">
+            <div class="strength-num">04</div>
+            <div class="strength-content">
+              <h4>Custom Coil Specifications</h4>
+              <p>Flexible coil weight, packing format, and spool configurations tailored to your drawing machine requirements.</p>
+            </div>
+          </div>
+          <div class="strength-item fade-up">
+            <div class="strength-num">05</div>
+            <div class="strength-content">
+              <h4>Experienced Management</h4>
+              <p>Leadership with deep expertise in aluminium and the electrical industry — backed by hands-on technical knowledge.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-us-right fade-in">
+        <div class="quality-cert">
+          <h4>Our Quality Commitment</h4>
+          <p style="font-size:0.85rem;color:rgba(255,255,255,0.5);margin-bottom:16px;line-height:1.6;">We operate a dedicated in-house quality lab equipped with world-class testing machinery — every lot is tested before it leaves our plant, and a test certificate accompanies every dispatch.</p>
+          <div class="cert-list">
+            <div class="cert-item">
+              <span class="cert-icon">✓</span>
+              <span class="cert-text">Dedicated in-house quality lab with world-class testing machinery</span>
+            </div>
+            <div class="cert-item">
+              <span class="cert-icon">✓</span>
+              <span class="cert-text">In-process quality checks at every production stage</span>
+            </div>
+            <div class="cert-item">
+              <span class="cert-icon">✓</span>
+              <span class="cert-text">Mechanical testing — tensile strength &amp; elongation</span>
+            </div>
+            <div class="cert-item">
+              <span class="cert-icon">✓</span>
+              <span class="cert-text">Electrical conductivity testing for EC Grade</span>
+            </div>
+            <div class="cert-item">
+              <span class="cert-icon">✓</span>
+              <span class="cert-text">Surface quality inspection — no cracks or laps</span>
+            </div>
+            <div class="cert-item">
+              <span class="cert-icon">✓</span>
+              <span class="cert-text">Test certificate provided with every lot</span>
+            </div>
+            <div class="cert-item">
+              <span class="cert-icon">✓</span>
+              <span class="cert-text">Consistent chemical composition control</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CAREERS ===================== -->
+<section id="careers">
+  <div class="section-inner">
+    <div class="careers-intro">
+      <div class="fade-up">
+        <div class="section-tag">
+          <div class="section-tag-line"></div>
+          <span class="section-tag-text">Careers</span>
+        </div>
+        <h2 class="section-title">Join Our Team</h2>
+        <p class="section-desc">We're building a strong team at Gravity Metal. If you are passionate about manufacturing excellence, quality, and being part of India's industrial growth story — we want to hear from you.</p>
+
+        <div class="perks-grid" style="margin-top:32px;">
+          <div class="perk-item">
+            <span class="perk-icon">🏭</span>
+            <div class="perk-text">
+              <h5>Industrial Growth</h5>
+              <p>Work in a fast-growing aluminium manufacturing company</p>
+            </div>
+          </div>
+          <div class="perk-item">
+            <span class="perk-icon">📈</span>
+            <div class="perk-text">
+              <h5>Career Advancement</h5>
+              <p>Performance-driven growth with clear advancement paths</p>
+            </div>
+          </div>
+          <div class="perk-item">
+            <span class="perk-icon">🤝</span>
+            <div class="perk-text">
+              <h5>Collaborative Culture</h5>
+              <p>Work alongside experienced professionals in a supportive environment</p>
+            </div>
+          </div>
+          <div class="perk-item">
+            <span class="perk-icon">🎯</span>
+            <div class="perk-text">
+              <h5>Skill Development</h5>
+              <p>On-the-job training and technical skill building opportunities</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="careerForm" class="careers-form fade-up">
+        <div class="form-title">Apply Now</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" id="c-name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" id="c-phone" placeholder="+91 XXXXX XXXXX" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="c-email" placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label>Total Experience</label>
+            <select id="c-exp">
+              <option value="">Select experience</option>
+              <option>Fresher / 0 years</option>
+              <option>1–2 years</option>
+              <option>3–5 years</option>
+              <option>5–10 years</option>
+              <option>10+ years</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Why do you want to join Gravity Metal?</label>
+          <textarea id="c-msg" placeholder="Tell us briefly about yourself and why you'd be a good fit..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Resume / CV</label>
+          <div class="file-upload" onclick="document.getElementById('cvFile').click()">
+            <input type="file" id="cvFile" accept=".pdf,.doc,.docx" onchange="updateFileName(this)">
+            <div class="file-upload-text" id="fileName">Click to <span>upload your CV</span> · PDF or Word · Max 5MB</div>
+          </div>
+        </div>
+        <button class="form-submit" onclick="submitCareer()">Submit Application</button>
+        <div class="form-success-msg" id="careerSuccess">
+          <h4>Application Received!</h4>
+          <p>Thank you for your interest in Gravity Metal. Our HR team will review your application and reach out if your profile is a match.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ENQUIRY ===================== -->
+<section id="enquiry">
+  <div class="section-inner">
+    <div class="enquiry-grid">
+      <div class="fade-up">
+        <div class="section-tag">
+          <div class="section-tag-line"></div>
+          <span class="section-tag-text">Contact Us</span>
+        </div>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-desc">Send us your requirements and we'll get back to you with product availability, pricing, and delivery timelines.</p>
+
+        <div class="contact-blocks">
+          <div class="contact-block">
+            <div class="contact-block-icon" style="background:#e8edf2;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c8a035" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-block-label">Call / WhatsApp</div>
+              <div class="contact-block-val">
+                <a href="tel:+919425513511">+91 94255 13511</a> — Vivek Chhaparia<br>
+                <a href="tel:+919977194974">+91 99771 94974</a> — Harsh Chhaparia<br>
+                <a href="tel:+919300135558">+91 93001 35558</a> — Ashish Agrawal
+              </div>
+            </div>
+          </div>
+          <div class="contact-block">
+            <div class="contact-block-icon" style="background:#e8edf2;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c8a035" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-block-label">Email</div>
+              <div class="contact-block-val"><a href="mailto:gravitymetal2022@gmail.com">gravitymetal2022@gmail.com</a></div>
+            </div>
+          </div>
+          <div class="contact-block">
+            <div class="contact-block-icon" style="background:#e8edf2;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c8a035" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact-block-label">Plant Address</div>
+              <div class="contact-block-val">Village Saddu, Near Tarpongi Toll Plaza<br>Raipur, Chhattisgarh – 493221</div>
+            </div>
+          </div>
+
+          <!-- Google Maps Link Button -->
+          <a href="https://maps.google.com/?q=21.518326,81.696220" target="_blank" rel="noopener noreferrer" class="maps-btn">
+            <div class="maps-btn-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#c8a035"/>
+                <circle cx="12" cy="9" r="2.5" fill="#ffffff"/>
+              </svg>
+            </div>
+            <div>
+              <div class="maps-btn-label">View on Google Maps</div>
+              <div class="maps-btn-sub">Village Saddu, Near Tarpongi Toll Plaza, Raipur</div>
+            </div>
+            <div class="maps-btn-arrow">→</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="enquiry-form-wrap fade-up">
+        <div class="form-title" style="font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--ink);letter-spacing:0.06em;margin-bottom:28px;padding-bottom:16px;border-bottom:1px solid var(--steel);">Send Enquiry</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" id="fname" placeholder="Full name" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" id="femail" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label>Message / Requirements</label>
+          <textarea id="fmsg" placeholder="Tell us about your requirements..."></textarea>
+        </div>
+        <button class="form-submit" style="background:var(--navy);color:var(--white);" onmouseover="this.style.background='#c8a035';this.style.color='var(--ink)'" onmouseout="this.style.background='var(--navy)';this.style.color='var(--white)'" onclick="submitEnquiry()">Send Enquiry</button>
+        <div class="form-success-msg" id="enquirySuccess">
+          <h4>Enquiry Sent Successfully!</h4>
+          <p>Our team will contact you within 24 hours with pricing and availability information.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#why-us">Why Choose Us</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#enquiry">Get Quote</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <address>
+          Village Saddu<br>
+          Near Tarpongi Toll Plaza<br>
+          Raipur, CG – 493221<br><br>
+          <a href="tel:+919425513511" style="color:rgba(255,255,255,0.55);text-decoration:none;">+91 94255 13511</a><br>
+          <a href="tel:+919977194974" style="color:rgba(255,255,255,0.55);text-decoration:none;">+91 99771 94974</a><br>
+          <a href="tel:+919300135558" style="color:rgba(255,255,255,0.55);text-decoration:none;">+91 93001 35558</a><br>
+          <a href="mailto:gravitymetal2022@gmail.com" style="color:rgba(255,255,255,0.55);text-decoration:none;">gravitymetal2022@gmail.com</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Gravity Metal Private Limited. All rights reserved.</span>
+      <span class="footer-bottom-tag">Strong Wire Rod for a Strong India</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Mobile menu with flip animation
+function toggleMenu(){
+  const menu = document.getElementById('mobileMenu');
+  const burger = document.querySelector('.hamburger');
+  const isOpen = menu.classList.contains('open');
+  if(isOpen){
+    menu.style.animation='none';
+    menu.style.opacity='0';
+    menu.style.transform='translateY(-12px)';
+    setTimeout(()=>{ menu.classList.remove('open'); menu.style.animation=''; }, 300);
+  } else {
+    menu.classList.add('open');
+  }
+  burger.classList.toggle('open');
+}
+
+// Scroll animations
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('visible');
+    }
+  });
+},{threshold:0.1});
+document.querySelectorAll('.fade-up,.fade-in').forEach(el=>observer.observe(el));
+
+// Active nav highlight on scroll
+const sections = document.querySelectorAll('section[id], div[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll',()=>{
+  let current='';
+  sections.forEach(s=>{
+    if(window.scrollY>=s.offsetTop-100) current=s.id;
+  });
+  navLinks.forEach(a=>{
+    a.style.color='';
+    if(a.getAttribute('href')==='#'+current) a.style.color='var(--gold)';
+  });
+});
+
+// File upload name
+function updateFileName(input){
+  const label = document.getElementById('fileName');
+  if(input.files.length>0){
+    label.innerHTML = '📎 <span>'+input.files[0].name+'</span>';
+  }
+}
+
+// Careers form
+async function submitCareer(){
+  const name=document.getElementById('c-name').value.trim();
+  const phone=document.getElementById('c-phone').value.trim();
+  const email=document.getElementById('c-email').value.trim();
+  const exp=document.getElementById('c-exp').value;
+  const msg=document.getElementById('c-msg').value.trim();
+  if(!name||!phone){alert('Please fill in your name and phone number.');return;}
+  const btn=document.querySelector('#careerForm .form-submit');
+  btn.textContent='Submitting...';btn.disabled=true;
+  try{
+    const res=await fetch('https://formspree.io/f/mpqbzgqo',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({
+        'Name':name,
+        'Phone':phone,
+        'Email':email,
+        'Experience':exp,
+        'Message':msg
+      })
+    });
+    if(res.ok){
+      document.getElementById('careerSuccess').style.display='block';
+      btn.style.display='none';
+      document.getElementById('careerSuccess').scrollIntoView({behavior:'smooth',block:'center'});
+    } else {
+      btn.textContent='Submit Application';btn.disabled=false;
+      alert('Something went wrong. Please try again.');
+    }
+  } catch(e){
+    btn.textContent='Submit Application';btn.disabled=false;
+    alert('Network error. Please try again.');
+  }
+}
+
+// Enquiry form
+async function submitEnquiry(){
+  const name=document.getElementById('fname').value.trim();
+  const phone=document.getElementById('phone').value.trim();
+  const email=document.getElementById('femail').value.trim();
+  const msg=document.getElementById('fmsg').value.trim();
+  if(!name||!phone){alert('Please fill in your name and phone number.');return;}
+  const btn=document.querySelector('#enquiry .form-submit');
+  btn.textContent='Sending...';btn.disabled=true;
+  try{
+    const res=await fetch('https://formspree.io/f/mkoynlok',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({
+        'Name':name,
+        'Phone':phone,
+        'Email':email,
+        'Message':msg
+      })
+    });
+    if(res.ok){
+      document.getElementById('enquirySuccess').style.display='block';
+      btn.style.display='none';
+      document.getElementById('enquirySuccess').scrollIntoView({behavior:'smooth',block:'center'});
+    } else {
+      btn.textContent='Send Enquiry';btn.disabled=false;
+      alert('Something went wrong. Please try again or call us directly.');
+    }
+  } catch(e){
+    btn.textContent='Send Enquiry';btn.disabled=false;
+    alert('Network error. Please try again or call us directly.');
+  }
+}
+
+// Search
+function toggleSearch(){
+  const overlay=document.getElementById('searchOverlay');
+  overlay.classList.toggle('open');
+  if(overlay.classList.contains('open')){
+    document.getElementById('searchInput').focus();
+    document.body.style.overflow='hidden';
+  } else {
+    document.body.style.overflow='';
+  }
+}
+function handleSearch(e){
+  if(e.key==='Escape') toggleSearch();
+  if(e.key==='Enter') searchGo(document.getElementById('searchInput').value);
+}
+function searchGo(term){
+  const map={'EC Grade':'#products','CG Grade':'#products','Flipping Coil':'#products','Contact':'#enquiry','Careers':'#careers','About':'#about','Products':'#products','Process':'#manufacturing'};
+  const lower=term.toLowerCase();
+  let target='#home';
+  for(const[k,v] of Object.entries(map)){
+    if(lower.includes(k.toLowerCase())){target=v;break;}
+  }
+  toggleSearch();
+  setTimeout(()=>{
+    const el=document.querySelector(target);
+    if(el) el.scrollIntoView({behavior:'smooth'});
+  },300);
+}
+document.addEventListener('keydown',e=>{if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();toggleSearch();}});
+
+// Ticker — pre-duplicate for reliable mobile rendering
+const ticker = document.getElementById('tickerContent');
+// Duplicate content so scroll loops seamlessly
+const original = ticker.innerHTML;
+ticker.innerHTML = original + original;
+// Force reflow to ensure animation starts correctly on mobile
+ticker.style.animation = 'none';
+ticker.offsetHeight; // trigger reflow
+ticker.style.animation = '';
+ticker.style.webkitAnimation = '';
+</script>
+</body>
+</html>
